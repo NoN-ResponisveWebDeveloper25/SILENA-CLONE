@@ -1,0 +1,445 @@
+@font-face{
+    src: url(./OpenSans-Regular.ttf);
+    font-family: sans;
+}
+
+
+@font-face{
+    src: url(./Siena-Regular.ttf);
+    font-family:sigma;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Gilroy"; */
+}
+
+
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.nav{
+    width: 100%;
+    padding: 2.8vh 1.7vw;
+    background-color: transparent;
+    position: fixed;
+    top: 0%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: sigma;
+    color: rgb(101,91,80);
+    font-size: 21px;
+    /* mix-blend-mode: difference; */
+    
+}
+.nav-left{
+    display: flex;
+    gap: 30px;
+   
+}
+.nav-left>h3,.nav-right>h3{
+    font-weight: 500;
+}
+
+.nav-right{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+   
+}
+.circle{
+    width: 17px;
+    height: 17px;
+    background-color:rgb(176,177,183) ;
+    border-radius: 50%;
+}
+
+.page{
+    width: 100%;
+    height: 200vh;
+   
+}
+
+
+.one{
+    background-color: rgb(101,91,80);
+    color: #d5c7a3;
+}
+.pageone>.top{
+    width: 100%;
+    height: 50%;
+   
+    
+   
+    position: relative;
+
+    
+}
+.pageone>.top>img{
+width: 100%;
+height: 100%;
+object-fit: contain;
+clip-path: circle(17% at 50% 50%);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+z-index: 99;
+
+}
+
+.pageone>.bottom{
+    width: 100%;
+    height: 50%;
+  
+    display: flex;
+    position: relative;
+    
+}
+.pageone>.bottom>.left{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction:column;
+    /* justify-content: center; */
+    text-align: left;
+   
+    padding-left: 7vw;
+}
+.pageone>.bottom>.left>h1{
+    font-size:4.16vw;
+    font-family:sigma;
+    font-weight: 500;
+    line-height: 1;
+    padding-bottom: 5vh;
+    
+}
+
+.pageone>.bottom>.left>p{
+    font-size:18px;
+    font-family:sans;
+    width: 45%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    line-height: 1.5;
+    
+}
+
+.pageone>.bottom>.right{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(4, 0, 255); */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* justify-content: center; */
+    /* text-align: left; */
+   
+    padding-left: 22vw;
+    justify-content: flex-end;
+    padding-bottom: 17vh;
+}
+.pageone>.bottom>.right>p{
+    font-family:sigma;
+    font-size: 22px;
+    /* line-height: 2; */
+    line-height: 1.4;
+    width: 70%;
+    letter-spacing: 2px;
+
+   
+}
+
+.pageone>.bottom>img{
+    position: absolute;
+    left: 55%;
+    top: 10%;
+    scale: 1.3;
+    z-index: 99;
+}
+
+
+
+.two{
+    background-color: rgb(234,227,209);
+    color: #655B50;
+}
+
+.three{
+    background-color: rgb(57,80,94);
+    color: #d5c7a3;
+}
+.four{
+    background-color: rgb(101,91,80);
+    color: #d5c7a3;
+}
+
+
+.five{
+    background-color: rgb(234,227,209);
+   
+    color: #655B50;
+}
+.six{
+    background-color: rgb(57,80,94);
+    color: #d5c7a3;
+}
+.seven{
+    background-color: rgb(234,227,209);
+    color: #655B50;
+}
+.eight{
+    background-color: rgb(101,91,80);
+    color: #d5c7a3;
+}
+
+
+
+.pagezoom{
+    width: 100%;
+    height: 100vh;
+    overflow:hidden;
+    
+   
+}
+.pagezoom-top{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(234,227,209);
+    position: relative;
+
+}
+.pagezoom-top>h1{
+    color: #d5c7a3;
+    font-size: 4.16vw;
+    font-family: sigma;
+    position: absolute;
+    font-weight: 500;
+    top: 20%;
+    left: 8%;
+    z-index: 999;
+    line-height: 4.2vw;
+
+}
+
+
+
+.pagezoom-top>h2{
+    color: #d5c7a3;
+    font-size:4.16vw;
+    font-family: sigma;
+    position: absolute;
+    font-weight: 500;
+    top: 45%;
+    left: 65%;
+    text-align: right;
+    z-index: 999;
+    line-height: 4.2vw;
+}
+.pagezoom-top>svg{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    position: absolute;
+    top: 55%;
+    left: 40%; 
+    z-index: 99;
+   
+}
+.pagezoom-top>img{
+    width: 500px;
+    height: 500px;
+    object-fit:cover;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* clip-path: circle(17% at 50% 50%); */
+    border-radius: 50%;
+   
+    z-index: 9999;
+
+}
+
+
+
+
+
+
+
+
+.pagethree{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(101,91,80);
+    
+}
+.pagethreeoverlay{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.pagethreeoverlay>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   clip-path:  circle(17% at 50% 50%);
+}
+
+
+
+
+/* ____________________________PAGEOVERLAP_____________________________ */
+
+
+
+.pageoverlap-top{
+    width: 100%;
+    height: 100vh;
+    background-color: #655B50;
+    color: #d5c7a3;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    gap: 6vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+
+    
+  
+}
+
+.pageoverlap-top>p,.pageoverlap-bottom>p{
+font-size: 35px;
+font-family: sigma;
+text-align: center;
+}
+
+.pageoverlap-top>.readmore,.pageoverlap-bottom>.readmore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.pageoverlap-top>.readmore>h2,.pageoverlap-bottom>.readmore>h2{
+    font-family: sigma;
+    font-size: 20px;
+    font-weight:500;
+}
+
+.pageoverlap-bottom{
+    width: 100%;
+    height: 100vh;
+    background-color: #d5c7a3;
+    color: #655B50;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    gap: 6vh;
+
+}
+
+
+
+
+
+
+/* __________________________PAGEZOOMNE_______________________ */
+
+
+
+.pagezoomnew{
+    width: 100%;
+    height: 100vh;
+    overflow:hidden;
+    
+   
+}
+.pagezoomnew-top{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(234,227,209);
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.pagezoomnew-top>img{
+    width: 500px;
+height:500px;
+object-fit: cover;
+border-radius: 50%;
+z-index: 999;
+}
+
+.pagezoomnew-top>p{
+    font-size: 35px;
+    text-align: center;
+    font-family: sigma;
+    width: 70%;
+    color: #d5c7a3;
+    z-index: 999;
+}
+
+
+.pagezoomnew-top>h3{
+    font-size: 18px;
+    text-align: center;
+    font-family: sans;
+    color: #d5c7a3;
+    font-weight: 500;
+    z-index: 999;
+    
+}
+
+
+
+
+
+.pagezoomnew-top>svg{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    position: absolute;
+    top: 55%;
+    left: 40%; 
+    z-index: 99;
+   
+}
+
+
+
+
+
+.imagechange{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    background-image: url(https://www.silena.com/fileadmin/templates/images/hg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
