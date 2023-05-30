@@ -72,7 +72,7 @@ lefttrigger.forEach(function(elem){
    trigger:elem,
    scroller:".main",
    start:"top 40%",
-   end:"top 30%",
+   end:"top 35%",
   // markers:true,
    scrub:3,
  }
@@ -90,7 +90,7 @@ righttrigger.forEach(function(elem){
    trigger:elem,
    scroller:".main",
    start:"top 30%",
-   end:"top 20%",
+   end:"top 25%",
   //  markers:true,
    scrub:2,
  }
@@ -115,7 +115,7 @@ gola.forEach(function(elem){
    trigger:elem,
    scroller:".main",
    start:"top 25%",
-   end:"top 20%",
+   end:"top 23%",
   
   //  markers:true,
    scrub:2,
@@ -263,9 +263,9 @@ lefttrigger.forEach(function(elem){
    trigger:elem,
    scroller:".main",
    start:"top 40%",
-   end:"top 30%",
+   end:"top 35%",
   // markers:true,
-   scrub:3,
+   scrub:2,
  }
  })
 })
@@ -281,7 +281,7 @@ righttrigger.forEach(function(elem){
    trigger:elem,
    scroller:".main",
    start:"top 30%",
-   end:"top 20%",
+   end:"top 25%",
   //  markers:true,
    scrub:2,
  }
@@ -306,7 +306,7 @@ gola.forEach(function(elem){
    trigger:elem,
    scroller:".main",
    start:"top 25%",
-   end:"top 20%",
+   end:"top 23%",
   
   //  markers:true,
    scrub:2,
@@ -398,6 +398,67 @@ scrollTrigger:{
 }
 )
  
+
+var lineone=document.querySelector(".lineone")
+var linetwo=document.querySelector(".linetwo")
+var linethree=document.querySelector(".linethree")
+var linefour=document.querySelector(".linefour")
+
+
+
+lineone.addEventListener("click",()=>{
+  
+  document.querySelector(".photochange").style.backgroundImage="url(https://additive.imgix.net/m/e/d/mediaservice/d/a/d/dada3a89513ed942d25aa33ce1d9cd6d?auto=format&fit=crop&h=800&q=90&w=800)"
+  document.querySelector(".boxchange>h1").innerHTML="YOGA, BABY!"
+  document.querySelector(".details>p").innerHTML="21.01.2023 - 01.05.2024"
+  document.querySelector(".details>h4").innerHTML="PACKAGE PRICE 192€"
+  
+
+
+
+
+})
+
+
+
+
+linetwo.addEventListener("click",()=>{
+  
+  document.querySelector(".photochange").style.backgroundImage="url(https://additive.imgix.net/m/e/d/mediaservice/d/a/d/dada3a89513ed942d25aa33ce1d9cd6d?auto=format&fit=crop&h=800&q=90&w=800)"
+  document.querySelector(".boxchange>h1").innerHTML="HONEYMOON - RELAX AND SIT <br> BACK"
+  document.querySelector(".details>p").innerHTML="21.01.2023 - 01.05.2024"
+  document.querySelector(".details>h4").innerHTML="PACKAGE PRICE 135€"
+
+
+
+
+})
+
+
+
+linethree.addEventListener("click",()=>{
+  document.querySelector(".photochange").style.backgroundImage="url(https://additive.imgix.net/m/e/d/mediaservice/a/a/7/aa7b9724af54a6e33c3325de53e6c2d3?auto=format&fit=crop&h=800&q=90&w=800)"
+  document.querySelector(".boxchange>h1").innerHTML="HONEYMOON - I'M YOUR  YIN AND <br> YOU'RE MY YANG"
+  document.querySelector(".details>p").innerHTML="21.04.2023 - 01.05.2024"
+  document.querySelector(".details>h4").innerHTML="PACKAGE PRICE 430€"
+
+
+
+
+})
+
+
+linefour.addEventListener("click",()=>{
+  document.querySelector(".photochange").style.backgroundImage="url(https://additive.imgix.net/m/e/d/mediaservice/2/1/c/21cd30f53d5df1012834764f5351e8f1?auto=format&crop=focalpoint&fit=crop&fp-x=0.63202527046192&fp-y=0.58998875140607&h=800&q=90&w=800)"
+  document.querySelector(".boxchange>h1").innerHTML="BABYMOON @ SILENA"
+  document.querySelector(".details>p").innerHTML="21.04.2023 - 01.05.2024"
+  document.querySelector(".details>h4").innerHTML="PACKAGE PRICE 392€"
+
+
+
+
+})
+
 
 
 

@@ -430,16 +430,280 @@ z-index: 999;
    
 }
 
-
+/* __________________IMAGECHANGPAGE____________________________ */
 
 
 
 .imagechange{
     width: 100%;
-    height: 100vh;
-    background-color: red;
-    background-image: url(https://www.silena.com/fileadmin/templates/images/hg.jpg);
-    background-size: cover;
-    background-position: center;
+    height: 140vh;
+ background-color: #f3efe4;
+   
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    color: #655B50;
+    justify-content: space-around;
+    padding: 10vh 0vh;
+    
+}
+.boxchange{
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    color: #655B50;
+    justify-content: space-around;
+
 }
 
+
+
+.photochange{
+    width:550px;
+    height: 550px;
+    border-radius: 50%;
+    transition: all 2s ease-in-out ;
+    background-image: url(https://additive.imgix.net/m/e/d/mediaservice/d/a/d/dada3a89513ed942d25aa33ce1d9cd6d?auto=format&fit=crop&h=800&q=90&w=800);
+    background-size: cover;
+}
+
+
+.boxchange>h1{
+   font-family: sigma;
+    font-size: 80px;
+    font-weight: 300;
+    transition: all 2s ease-in-out ;
+    
+    text-align: center;
+}
+
+.details{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+.details>p,h4{
+    font-size: 18px;
+    font-family: sans;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.readmore{
+    display: flex;
+}
+.readmore>h2{
+    font-family: sigma;
+    font-size: 20px;
+    font-weight: 500;
+}
+.lines{
+    display: flex;
+    gap: 20px;
+    padding: 25px 25px;
+    
+}
+.line{
+    width: 100px;
+    height: 3.5px;
+    background-color: #655B50;
+    opacity: 0.7;
+    position: relative;
+
+}
+.line::after{
+    width: 100%;
+    height:0%;
+    content: "";
+    background-color:#655B50;
+    position: absolute;
+    top: -200%;
+
+}
+
+.line:hover::after{
+    height: 200%;
+   
+
+}
+.line:hover>.photochange{
+    animation: zommer 2s ease-in-out;
+}
+
+
+@keyframes zommer{
+    0%{
+        scale: 1;
+        opacity: 1;
+    }
+
+    50%{
+        scale: 0;
+         opacity:0;
+
+    }
+    100%{
+
+        scale: 1;
+        opacity: 1;
+
+    }
+}
+
+
+
+
+/* __________________________LASTPAGE________________________________ */
+
+
+.lastpage{
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(57,80,94);
+    color: #d5c7a3;
+    display: flex;
+   
+}
+.lastpage-left{
+    width: 30%;
+    height: 100%;
+   
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10vh;
+   padding-left: 8%;
+    position: relative;
+    gap: 8px;
+}
+.lastpage-left>img{
+    position: absolute;
+    top: -8%;
+    left: -20%;
+    scale: 1.3;
+}
+.lastpage-left>p,a{
+    font-family: sans;
+    color: #d5c7a3;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.lastpage-left>p{
+    padding-top: 25px;
+    padding-bottom: 40px;
+    line-height: 1.5;
+}
+
+
+.lastpage-middle{
+    width: 40%;
+    height: 100%;
+    
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    /* justify-content:center; */
+    padding-top: 22vh;
+    
+}
+
+.lastpage-middle>.texts>h1{
+    font-size: 80px;
+    font-family: sigma;
+    color: #d5c7a3;
+    font-weight: 500;
+    text-align: center;
+    /* background-color: red; */
+   
+}
+
+.lastpage-middle>.texts>h1:hover{
+    opacity: 0.5;
+    transition: all 0.2s ease-in;
+}
+#paddingtext{
+    padding: 3.5vh 0vh;
+}
+.icons{
+    margin-top: 22vh;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.icons>img:hover{
+    scale: 1.1;
+     transition:all 0.3s ease-in-out;
+}
+
+
+.lastpage-right{
+    width: 30%;
+    height: 100%;
+   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow:hidden;
+    position: relative;
+}
+
+.lastpage-right>img{
+    position: absolute;
+    top: 58%;
+    left: 65%;
+    scale: 1.5;
+}
+
+
+/* _________________________FOTTER__________________________ */
+.fotter{
+    width: 100%;
+    height: 28vh;
+    background-color: rgb(244,241,232);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.fotter-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+.fotter-left>img{
+    background-color:rgb(244,241,232);
+    mix-blend-mode: darken;
+}
+
+
+.fotter-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+
+.fotter-right>h4,h3{
+    font-family: sans;
+    font-size: 18px;
+    color: #655B50;
+}
+.fotter-right>h3{
+text-decoration: underline;
+font-weight: 500;
+letter-spacing: 2.7px;
+color: #655B50;
+}
+
+.fotter-right>h3:hover{
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
