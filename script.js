@@ -43,7 +43,7 @@ function locoscroll(){
   var img=document.querySelectorAll(".imgfirst")
 
 
-  console.log(img);
+
 
   img.forEach(function(elem){
     gsap.from(elem,{
@@ -59,6 +59,23 @@ function locoscroll(){
    }
    })
   })
+
+
+
+
+  gsap.to(".pageone>img",{
+    scale:0,
+    opacity:0,
+ scrollTrigger:{
+   trigger:".pageone>img",
+   scroller:".main",
+   start:"top 14%",
+   end:"top 5%",
+   pin:true,
+     markers:true,
+   scrub:2,
+ }
+ })
 
   
 
@@ -105,7 +122,6 @@ righttrigger.forEach(function(elem){
  var gola=document.querySelectorAll(".gola")
 
  
-console.log(gola)
 
 gola.forEach(function(elem){
 
@@ -234,7 +250,7 @@ scrollTrigger:{
 var img=document.querySelectorAll(".imgfirstnew")
 
 
-  console.log(img);
+  
 
   img.forEach(function(elem){
     gsap.from(elem,{
@@ -296,7 +312,6 @@ righttrigger.forEach(function(elem){
  var gola=document.querySelectorAll(".golanew")
 
  
-console.log(gola)
 
 gola.forEach(function(elem){
 
@@ -344,6 +359,7 @@ gsap.from(".spaun",{
 
   
   opacity:0,
+  scale:0,
   y:100,
 
 scrollTrigger:{
@@ -459,6 +475,35 @@ linefour.addEventListener("click",()=>{
 
 })
 
+
+
+
+var hover=document.querySelectorAll(".hovercircle")
+console.log(hover)
+
+hover.forEach(function(elem){
+
+  elem.addEventListener("mouseenter",function(){
+    elem.style.transform="scale(3)"
+    
+  
+  })
+
+
+})
+
+
+
+hover.forEach(function(elem){
+
+  elem.addEventListener("mouseleave",function(){
+    elem.style.transform="scale(1)"
+    
+  
+  })
+
+
+})
 
 
 

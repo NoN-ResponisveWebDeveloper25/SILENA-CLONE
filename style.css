@@ -66,12 +66,25 @@ body {
     border-radius: 50%;
 }
 
+
+
+
+/* _____________________PAGEONE___________________________________ */
 .page{
     width: 100%;
     height: 200vh;
    
 }
-
+.pageone{
+    position: relative;
+}
+.pageone>img{
+    position: absolute;
+    z-index: 99999;
+    top:7%;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
 
 .one{
     background-color: rgb(101,91,80);
@@ -206,6 +219,9 @@ z-index: 99;
     background-color: rgb(101,91,80);
     color: #d5c7a3;
 }
+
+
+/* _______________________PAGEZOOM______________________________________ */
 
 
 
@@ -705,5 +721,25 @@ color: #655B50;
 .fotter-right>h3:hover{
     opacity: 0.5;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.readmore{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vw;
+   
+}
+.readmore>h2{
+    z-index: 99;
+}
+.hovercircle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(135,124,105);
+    z-index: 2;
+    transition: all 1.5s ease;
     cursor: pointer;
 }
