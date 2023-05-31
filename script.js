@@ -72,7 +72,7 @@ function locoscroll(){
    start:"top 14%",
    end:"top 5%",
    pin:true,
-     markers:true,
+    //  markers:true,
    scrub:2,
  }
  })
