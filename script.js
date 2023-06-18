@@ -63,15 +63,15 @@ function locoscroll(){
 
 
 
-  gsap.to(".pageone>img",{
+  gsap.to(".companylogo>img",{
     scale:0,
     opacity:0,
  scrollTrigger:{
-   trigger:".pageone>img",
+   trigger:".one",
    scroller:".main",
-   start:"top 14%",
-   end:"top 5%",
-   pin:true,
+   start:"top 0%",
+   end:"top -5%",
+  //  pin:true,
     //  markers:true,
    scrub:2,
  }
@@ -484,7 +484,7 @@ console.log(hover)
 hover.forEach(function(elem){
 
   elem.addEventListener("mouseenter",function(){
-    elem.style.transform="scale(3)"
+    elem.style.transform="scale(2.6)"
     
   
   })
